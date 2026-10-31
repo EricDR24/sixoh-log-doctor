@@ -2,6 +2,8 @@
 
 This project is offline analysis of previously exported log files only. It contains no vehicle connection, diagnostic command, actuator control, configuration or programming functions. This tool sends nothing.
 
+Today the tool is offline-only, and any future live mode will be allowlist-only read requests and will update this page first.
+
 External logging software (for example FORScan with an OBD adapter) does communicate with the vehicle, and OBD polling sends requests. The read-only guarantee applies to the analyzer, not to the logger.
 
 It is not tuning advice and not a substitute for a qualified diesel mechanic. Use at your own risk. While moving, only a passenger may operate or inspect the logger. The logger may be recording without driver interaction.
