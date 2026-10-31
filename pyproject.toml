@@ -1,15 +1,26 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "sixoh-log-doctor"
-version = "0.0.1"
+dynamic = ["version"]
 description = "Read-only datalog analyzer for the Ford 6.0L Powerstroke. Never writes to a vehicle."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.dynamic]
+version = { attr = "sixoh_log_doctor.__version__" }
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,10 +1,12 @@
 # sixoh-log-doctor
 
-A read-only datalog analyzer for the 2003-2007 Ford 6.0L Powerstroke. You log your truck with FORScan on Windows, export a CSV, and this tool checks the log for common 6.0 warning signs and explains them in plain English. It runs on macOS or Windows.
+A pre-alpha project for an offline datalog analyzer targeting 2003 to 2007 Ford 6.0L Power Stroke vehicles. The planned workflow is to export a FORScan CSV on Windows and analyze it locally. CSV import, analysis, and reporting are not implemented yet. macOS and Windows support are planned but have not been validated.
+
+This project is not affiliated with or endorsed by Ford or FORScan.
 
 ## Safety statement
 
-**This project only reads logged data. It never writes to, flashes, or tunes any vehicle module, and it does not support removing or disabling emissions equipment. It is not tuning advice and not a substitute for a qualified diesel mechanic. Use at your own risk. Logging while driving must be done by a passenger or left unattended.**
+**This project only reads logged data. It never writes to, flashes, or tunes any vehicle module, and it does not support removing or disabling emissions equipment. It is not tuning advice and not a substitute for a qualified diesel mechanic. Use at your own risk. Logging while driving must be done by a passenger, or it is recording without driver interaction.**
 
 - Reads log files only. It never connects to, writes to, or flashes an ECU, PCM, or FICM.
 - No emissions-delete support of any kind. Requests for it will be closed.

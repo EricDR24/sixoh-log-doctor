@@ -13,3 +13,5 @@ htmlcov/
 # Personal truck logs and reports (may contain VIN or location data)
 logs/
 reports/
+*.csv
+.env
